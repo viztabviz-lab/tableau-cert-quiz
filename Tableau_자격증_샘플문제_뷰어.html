@@ -123,8 +123,8 @@
 </div>
 
 <div class="mode-bar">
-  <button class="mode-btn" data-m="quiz" onclick="setMode('quiz')">퀴즈 모드 (직접 풀기)</button>
-  <button class="mode-btn active" data-m="study" onclick="setMode('study')">학습 모드 (정답+해설 바로 보기)</button>
+  <button class="mode-btn active" data-m="quiz" onclick="setMode('quiz')">퀴즈 모드 (직접 풀기)</button>
+  <button class="mode-btn" data-m="study" onclick="setMode('study')">학습 모드 (정답+해설 바로 보기)</button>
   <div class="mode-score" id="scoreDisplay"></div>
 </div>
 
@@ -248,7 +248,7 @@ const ALL_Q = [
 const SHELF_OPTS = ["선택하세요","Columns (열)","Rows (행)","Color (색상)","Detail (세부 정보)","Size (크기)","Label (레이블)"];
 
 // ── 상태 ──
-let mode = 'study';
+let mode = 'quiz';
 let curSubj = 0;
 let curIdx = 0;
 const TOTAL = ALL_Q.length;
